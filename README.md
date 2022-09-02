@@ -34,6 +34,13 @@ Alternatively, you can use the Jenkinsfile to run the pipeline:
 | jenkins/Jenkinsfile-pulumi-up      | This will create the kubernetes resources. |
 | jenkins/Jenkinsfile-pulumi-destroy | This will delete the kubernetes resources. |
 
+Environment variables required by Jenkins:
+
+| Name                | Description                                |
+|---------------------|--------------------------------------------|
+| PULUMI_ACCESS_TOKEN | It is the access token to the Pulumi account. It is recommended to create a key with the same name in the credentials manager. |
+
+
 Other requirements:
 1. A jenkins agent with pulum and kubectl installed and configured to connect to the kubernetes cluster.
 2. The agent must have the "pulumi" label
