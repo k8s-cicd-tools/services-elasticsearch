@@ -42,7 +42,7 @@ Environment variables required by Jenkins:
 
 
 Other requirements:
-1. A jenkins agent with pulum and kubectl installed and configured to connect to the kubernetes cluster.
+1. A jenkins agent with pulumi and kubectl installed and configured to connect to the kubernetes cluster.
 2. The agent must have the "pulumi" label
 3. Global tool configuration: add a NodeJS 16.17.0 installation with the name "node 16.17.0"
 4. Configure the SCM Pipeline script with this repository, select the branch and change the Jenkins file path to the corresponding option to deploy.
