@@ -50,14 +50,18 @@ Other requirements:
 
 ## Resources and dependencies
 
-| Name       | Version | Required |
-|------------|---------|----------|
-| kubernetes | 1.23    | no       |
-| pulumi     | 3.38.0  | no       |
+| Name            | Version | Required |
+|-----------------|---------|----------|
+| kubernetes      | 1.23    | yes      |
+| pulumi          | 3.38.0  | no       |
+| elasticsearch   | 7.17.0  | yes      |
 
 #### Also:
 - create a Kubernetes namespace named "monitoring"
 - Storage: 6 GB of disk space for DB and logs, this for testing purposes.
 
+## Support kubernetes versions
 
-
+| Version k8s | Description | Branch |
+|-------------|-------------|---------|
+| 1.23        |             | main    |
